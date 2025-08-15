@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — BrandName</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">BrandName</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Shop</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="cart-pill" href="cart.html"><span id="navCartCount">0</span> Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container page">
+    <h1>Our Story</h1>
+    <p class="lead">Replace this with your brand story and mission. Keep it crisp, high-contrast, and conversion-oriented.</p>
+    <div class="about-grid">
+      <img src="images/about-1.jfif" alt="Workshop" class="card-img" />
+      <div class="about-copy card">
+        <h3>Craft & Comfort</h3>
+        <p>Talk about materials, fit, lens options, and why this single frame works for most face shapes.</p>
+      </div>
+      <div class="about-copy card">
+        <h3>Sustainable Choice</h3>
+        <p>Mention packaging, warranty, repair policy, or sustainability promise.</p>
+      </div>
+      <img src="images/hero-eyewear.png" alt="Lifestyle" class="card-img" />
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> BrandName</p>
+      <a href="cart.html" class="footer-cart">Cart (<span id="footerCartCount">0</span>)</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

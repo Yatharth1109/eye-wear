@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop — BrandName</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">BrandName</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="product.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="cart-pill" href="cart.html"><span id="navCartCount">0</span> Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container page product-page">
+    <div class="gallery">
+      <img id="mainImg" src="images/eyewear-default.jfif" alt="Eyewear" class="product-img float-in"/>
+      <div class="thumbs" id="colorThumbs"><!-- injected by JS --></div>
+    </div>
+
+    <div class="product-info card">
+      <h1 id="pTitle">The One Frame</h1>
+      <p class="price"><span id="pPrice">₹1,999</span> <span class="muted">incl. taxes</span></p>
+      <p class="meta">Free shipping • 7-day return</p>
+
+      <div class="option">
+        <label>Choose Color</label>
+        <div id="colorSwatches" class="swatches"><!-- injected by JS --></div>
+      </div>
+
+      <div class="option">
+        <label>Lens Type</label>
+        <div class="seg" id="lensSeg">
+          <button data-lens="Blue-Cut" class="seg-btn active">Blue-Cut</button>
+          <button data-lens="Sunglass" class="seg-btn">Sunglass</button>
+        </div>
+      </div>
+
+      <div class="qty-row">
+        <button class="qty-btn" id="qtyDec" aria-label="Decrease">−</button>
+        <input type="number" id="qtyInput" min="1" value="1" />
+        <button class="qty-btn" id="qtyInc" aria-label="Increase">+</button>
+      </div>
+
+      <div class="cta-row">
+        <button id="addToCart" class="btn btn-primary">Add to Cart</button>
+        <a href="cart.html" class="btn btn-ghost">Buy Now</a>
+      </div>
+
+      <ul class="bullets">
+        <li>Unisex, lightweight frame</li>
+        <li>6 curated colorways</li>
+        <li>Anti-glare, UV protection</li>
+      </ul>
+    </div>
+  </main>
+
+  <section class="band band-gray">
+    <div class="container specs-grid">
+      <div class="spec">
+        <h4>Materials</h4><p>Acetate + stainless steel core</p>
+      </div>
+      <div class="spec">
+        <h4>Dimensions</h4><p>48-20-145 (mm)</p>
+      </div>
+      <div class="spec">
+        <h4>Warranty</h4><p>1 year manufacturing defects</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> BrandName</p>
+      <a href="cart.html" class="footer-cart">Cart (<span id="footerCartCount">0</span>)</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
