@@ -37,12 +37,12 @@ const PRODUCT = {
   title: "The One Frame",
   basePrice: 1999, // INR
   colors: [
-    { key:"white",   name:"Soft White",   hex:"#F5F6F6", img:"images/eyewear-white.jfif" },
-    { key:"aqua",    name:"Light Aqua",   hex:"#75CED2", img:"images/eyewear-aqua.jfif" },
-    { key:"teal",    name:"Teal",         hex:"#618E8D", img:"images/eyewear-teal.jfif" },
-    { key:"gray",    name:"Graphite",     hex:"#7F7F89", img:"images/eyewear-gray.jfif" },
-    { key:"navy",    name:"Deep Navy",    hex:"#171931", img:"images/eyewear-navy.jfif" },
-    { key:"classic", name:"Classic Black",hex:"#000000", img:"images/eyewear-black.jfif" },
+    { key:"white",   name:"Soft White",   hex:"#F5F6F6", img:"eyewear-white.jfif" },
+    { key:"aqua",    name:"Light Aqua",   hex:"#75CED2", img:"eyewear-aqua.jfif" },
+    { key:"teal",    name:"Teal",         hex:"#618E8D", img:"eyewear-teal.jfif" },
+    { key:"gray",    name:"Graphite",     hex:"#7F7F89", img:"eyewear-gray.jfif" },
+    { key:"navy",    name:"Deep Navy",    hex:"#171931", img:"eyewear-navy.jfif" },
+    { key:"classic", name:"Classic Black",hex:"#000000", img:"eyewear-black.jfif" },
   ],
   lenses: ["Blue-Cut","Sunglass"]
 };
@@ -227,4 +227,5 @@ const PRODUCT = {
       setCart([]); updateCartPills();
     });
   }
+
 })();
